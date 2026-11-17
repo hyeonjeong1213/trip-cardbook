@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역별 여행지 카드북</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <h1>✈ TRIP CARDBOOK</h1>
+        <nav>
+            <button id="homeTab" class="nav-btn active">
+                여행지 둘러보기
+            </button>
+            <button id="favoriteTab" class="nav-btn">
+                ♥ 나의 보관함
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- 메인 소개 -->
+    <section class="hero">
+        <p class="hero-label">KOREA TRAVEL ARCHIVE</p>
+        <h2>어디로 떠나고 싶으신가요?</h2>
+        <p>전국의 다양한 여행지를 발견하고 나만의 여행 목록을 만들어 보세요.</p>
+    </section>
+
+    <!-- 지역 선택 영역 -->
+    <section id="searchSection" class="search-section">
+
+        <h3>지역별 여행지 찾기</h3>
+
+        <div class="search-box">
+            <select id="areaSelect">
+                <option value="">지역을 선택하세요</option>
+                <option value="1">서울</option>
+                <option value="2">인천</option>
+                <option value="3">대전</option>
+                <option value="4">대구</option>
+                <option value="5">광주</option>
+                <option value="6">부산</option>
+                <option value="7">울산</option>
+                <option value="8">세종</option>
+                <option value="31">경기도</option>
+                <option value="32">강원특별자치도</option>
+                <option value="33">충청북도</option>
+                <option value="34">충청남도</option>
+                <option value="35">경상북도</option>
+                <option value="36">경상남도</option>
+                <option value="37">전북특별자치도</option>
+                <option value="38">전라남도</option>
+                <option value="39">제주특별자치도</option>
+            </select>
+
+            <button id="searchBtn">여행지 검색</button>
+        </div>
+
+    </section>
+
+    <!-- 관광지 목록 -->
+    <section id="listSection">
+
+        <div class="section-title">
+            <div>
+                <h3 id="listTitle">추천 여행지</h3>
+                <p id="resultCount">지역을 선택해 주세요.</p>
+            </div>
+        </div>
+
+        <div id="loading" class="message hidden">
+            관광정보를 불러오는 중입니다...
+        </div>
+
+        <div id="tourList" class="tour-grid"></div>
+
+        <div id="emptyMessage" class="message hidden">
+            조회된 관광정보가 없습니다.
+        </div>
+
+    </section>
+
+    <!-- 찜 보관함 -->
+    <section id="favoriteSection" class="hidden">
+
+        <div class="section-title">
+            <div>
+                <h3>♥ 나의 여행 보관함</h3>
+                <p id="favoriteCount">내가 찜한 여행지</p>
+            </div>
+        </div>
+
+        <div id="favoriteList" class="tour-grid"></div>
+
+        <div id="favoriteEmpty" class="message hidden">
+            아직 찜한 여행지가 없습니다.
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>TRIP CARDBOOK</p>
+    <p>한국관광공사 국문 관광정보 서비스 API 활용</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
