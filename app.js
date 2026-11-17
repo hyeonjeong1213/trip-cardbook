@@ -22,16 +22,16 @@ import {
 // ===================================
 
 // 공공데이터포털 일반 인증키(Decoding)
-const TOUR_API_KEY = "여기에_공공데이터_API_인증키";
+const TOUR_API_KEY = "96be0511685b05c9ba06f9a05e7ee06a9387b229516bb06bacfc732aea8f9677";
 
 // Firebase 설정
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT.firebasestorage.app",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCDWdqKWEilOIUjuQSL25H4rjwjmL0xqwk",
+  authDomain: "trip-cardbook.firebaseapp.com",
+  projectId: "trip-cardbook",
+  storageBucket: "trip-cardbook.firebasestorage.app",
+  messagingSenderId: "32852762976",
+  appId: "1:32852762976:web:bb9b38db41f3c205723e05"
 };
 
 // Firebase 초기화
